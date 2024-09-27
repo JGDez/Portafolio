@@ -1,7 +1,23 @@
 -- SQLBook: Markup
 # 1.4 Jardinería
 -- SQLBook: Markup
-## Creación de BD
+**Índice**
+
+- [Creación de BD](#Creación_de_BD)
+- [Creación de tablas](#Creación_de_tablas)
+- [Introducción de datos en las tablas](#Introducción_de_datos_en_las_tablas)
+- [1.4.4 Consultas sobre una tabla](#1.4.4_Consultas_sobre_una_tabla)
+- [1.4.5 Consultas multitabla (Composición interna)](#1.4.5_Consultas_multitabla_(Composición_interna))
+- [1.4.6 Consultas multitabla (Composición externa)](#1.4.6_Consultas_multitabla_(Composición_externa))
+- [1.4.7 Consultas resumen](#1.4.7_Consultas_resumen)
+- [1.4.8 Subconsultas](#1.4.8_Subconsultas)
+- [1.4.8.1 Con operadores básicos de comparación](#1.4.8.1_Con_operadores_básicos_de_comparación)
+- [1.4.8.2 Subconsultas con `ALL` y `ANY`](#1.4.8.2_Subconsultas_con_`ALL`_y_`ANY`)
+- [1.4.8.3 Subconsultas con `IN` y `NOT IN`](#1.4.8.3_Subconsultas_con_`IN`_y_`NOT_IN`)
+- [1.4.8.4 Subconsultas con `EXISTS` y `NOT EXISTS`](#1.4.8.4_Subconsultas_con_`EXISTS`_y_`NOT_EXISTS`)
+- [1.4.9 Consultas variadas](#1.4.9_Consultas_variadas)
+-- SQLBook: Markup
+## <a id="Creación_de_BD"></a>Creación de BD
 -- SQLBook: Code
 /*Eliminar la BD si existe*/
 DROP DATABASE IF EXISTS jardineria;
@@ -9,7 +25,7 @@ DROP DATABASE IF EXISTS jardineria;
 CREATE DATABASE jardineria CHARACTER SET utf8mb4;
 USE jardineria;
 -- SQLBook: Markup
-## Creación de tablas
+## <a id="Creación_de_tablas"></a>Creación de tablas
 -- SQLBook: Markup
 ### Tabla `oficina`
 -- SQLBook: Code
@@ -129,7 +145,7 @@ CREATE TABLE detalle_pedido (
     FOREIGN KEY (codigo_producto) REFERENCES producto(codigo_producto)
 );
 -- SQLBook: Markup
-## Introducción de datos en las tablas
+## <a id="Introducción_de_datos_en_las_tablas"></a>Introducción de datos en las tablas
 
 Código copiado de <https://gist.github.com/josejuansanchez/c408725e848afd64dd9a20ab37fba8c9>
 -- SQLBook: Markup
@@ -989,7 +1005,7 @@ INSERT INTO pago VALUES
 	(38,'PayPal','ak-std-000026','2006-05-26',1171)
 ;
 -- SQLBook: Markup
-## 1.4.4 Consultas sobre una tabla
+## <a id="1.4.4_Consultas_sobre_una_tabla"></a>1.4.4 Consultas sobre una tabla
 -- SQLBook: Markup
 1. Devuelve un listado con el código de oficina y la ciudad donde hay oficinas.
 -- SQLBook: Code
@@ -1080,7 +1096,7 @@ SELECT * FROM producto WHERE gama = "Ornamentales" AND cantidad_en_stock > 100 O
 -- SQLBook: Code
 SELECT * FROM cliente WHERE LOWER(ciudad) = 'madrid' AND codigo_empleado_rep_ventas IN(11, 30);
 -- SQLBook: Markup
-## 1.4.5 Consultas multitabla (Composición interna)
+## <a id="1.4.5_Consultas_multitabla_(Composición_interna)"></a>1.4.5 Consultas multitabla (Composición interna)
 
 Resuelva todas las consultas utilizando la sintaxis de SQL1 y SQL2. Las consultas con sintaxis de SQL2 se deben resolver con `INNER JOIN` y `NATURAL JOIN`.
 -- SQLBook: Markup
@@ -1175,7 +1191,7 @@ SELECT DISTINCT cli.nombre_cliente AS 'Cliente', gp.gama AS 'Gama' FROM cliente 
  ORDER BY cli.nombre_cliente
 ;
 -- SQLBook: Markup
-## 1.4.6 Consultas multitabla (Composición externa)
+## <a id="1.4.6_Consultas_multitabla_(Composición_externa)"></a>1.4.6 Consultas multitabla (Composición externa)
 
 Resuelva todas las consultas utilizando las cláusulas `LEFT JOIN`, `RIGHT JOIN`, `NATURAL LEFT JOIN` y
 `NATURAL RIGHT JOIN`.
@@ -1298,7 +1314,7 @@ SELECT emp.*, jefe.nombre AS 'Nombre Jefe', CONCAT(jefe.apellido1, ' ', COALESCE
  ORDER BY emp.nombre, emp.apellido1, emp.apellido2 ASC
 ;
 -- SQLBook: Markup
-## 1.4.7 Consultas resumen
+## <a id="1.4.7_Consultas_resumen"></a>1.4.7 Consultas resumen
 -- SQLBook: Markup
 1. ¿Cuántos empleados hay en la compañía?
 -- SQLBook: Code
@@ -1435,9 +1451,9 @@ SELECT
 -- SQLBook: Code
     SELECT YEAR(fecha_pago) AS Año, SUM(total) AS 'Total' FROM pago GROUP BY Año
 -- SQLBook: Markup
-## 1.4.8 Subconsultas
+## <a id="1.4.8_Subconsultas"></a>1.4.8 Subconsultas
 
-### 1.4.8.1 Con operadores básicos de comparación
+### <a id="1.4.8.1_Con_operadores_básicos_de_comparación"></a>1.4.8.1 Con operadores básicos de comparación
 -- SQLBook: Markup
 1. Devuelve el nombre del cliente con mayor límite de crédito.
 -- SQLBook: Code
@@ -1499,7 +1515,7 @@ SELECT nombre AS 'Nombre', CONCAT(apellido1, ' ', COALESCE(apellido2)) AS 'Apell
  ); 
  --Se pasa todo a minúsculas para evitar diferencias al escribir.
 -- SQLBook: Markup
-### 1.4.8.2 Subconsultas con `ALL` y `ANY`
+### <a id="1.4.8.2_Subconsultas_con_`ALL`_y_`ANY`"></a>1.4.8.2 Subconsultas con `ALL` y `ANY`
 -- SQLBook: Markup
 8. Devuelve el nombre del cliente con mayor límite de crédito.
 -- SQLBook: Code
@@ -1522,7 +1538,7 @@ SELECT nombre FROM producto
     SELECT MIN(cantidad_en_stock) FROM producto
  );
 -- SQLBook: Markup
-### 1.4.8.3 Subconsultas con `IN` y `NOT` `IN`
+### <a id="1.4.8.3_Subconsultas_con_`IN`_y_`NOT_IN`"></a>1.4.8.3 Subconsultas con `IN` y `NOT` `IN`
 -- SQLBook: Markup
 11. Devuelve el nombre, apellido1 y cargo de los empleados que no representen a ningún cliente.
 -- SQLBook: Code
@@ -1592,7 +1608,7 @@ SELECT cli.nombre_cliente FROM cliente AS cli
     )
 ;
 -- SQLBook: Markup
-### 1.4.8.4 Subconsultas con `EXISTS` y `NOT EXISTS`
+### <a id="1.4.8.4_Subconsultas_con_`EXISTS`_y_`NOT_EXISTS`"></a>1.4.8.4 Subconsultas con `EXISTS` y `NOT EXISTS`
 -- SQLBook: Markup
 18. Devuelve un listado que muestre solamente los clientes que no han realizado ningún pago.
 -- SQLBook: Code
@@ -1642,7 +1658,7 @@ SELECT pro.nombre FROM producto AS pro
     ORDER BY pro.codigo_producto
 ;
 -- SQLBook: Markup
-## 1.4.9 Consultas variadas
+## <a id="1.4.9_Consultas_variadas"></a>1.4.9 Consultas variadas
 -- SQLBook: Markup
 1. Devuelve el listado de clientes indicando el nombre del cliente y cuántos pedidos ha realizado. Tenga en cuenta que pueden existir clientes que no han realizado ningún pedido.
 -- SQLBook: Code
