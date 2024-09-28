@@ -4,7 +4,7 @@ Carpeta con mis soluciones a algunos de los ejercicios realizados en los cursos,
 
 ## Ejercicios sobre base de datos `jardineria`
 
-Los enunciados y mis soluciones están en el archivo [BD_Jardineria.sqlbook](BD_Jardinería.sqlbook) que puede ser abierto con VSCode para su correcta visualización.
+Los enunciados y mis soluciones están en el archivo [BD_Jardineria.sqlbook](BD_Jardineria.sqlbook) que puede ser abierto con VSCode para su correcta visualización. También están en formato `SQL` plano en el archivo [BBD_Jardineria.sql](BD_Jardineria.sql).
 
 El formato `sqlbook` permite combinar código markdown con SQL y así poder poner los enunciados y secciones junto con su código correspondiente.
 
