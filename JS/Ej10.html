@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <link rel="stylesheet" href="Ej10.css">
+    <title>Ejercicio 10 JavaScript 6: DOM</title>
+</head>
+<body>
+    <!--
+        Trata de hacer el juego de piedra, papel o tijera con una interfaz de
+        usuario en la que pueda interaccionar de forma cómoda y amigable.
+    -->
+
+    <h1>Juego de Piedra, Papel, Tijera</h1>
+
+    <div id="contenedorJuego">
+        <div class="contenedor" id="seccionJugador">
+            <img class="noSelec" id="figPiedraJ" name="Piedra" src="./Imagenes/Piedra, papel, tijera/piedra-preciosa.png" alt="Piedra">
+            <img class="noSelec" id="figPapelJ"  name="Papel" src="./Imagenes/Piedra, papel, tijera/hoja-en-blanco.png" alt="Papel">
+            <img class="noSelec" id="figTijeraJ" name="Tijera" src="./Imagenes/Piedra, papel, tijera/cortar-con-tijeras.png" alt="Tijera">
+        </div>
+        <div id="juego">
+            <div id="mensajes">
+            </div>
+            <div id="botonJuego">Jugar</div>
+        </div>
+        <div class="contenedor" id="seccionPC">
+            <img class="noSelec" id="figPiedraPC" name="Piedra" src="./Imagenes/Piedra, papel, tijera/piedra-preciosa.png" alt="Piedra">
+            <img class="noSelec" id="figPapelPC" name="Papel" src="./Imagenes/Piedra, papel, tijera/hoja-en-blanco.png" alt="Papel">
+            <img class="noSelec" id="figTijeraPC" name="Tijera" src="./Imagenes/Piedra, papel, tijera/cortar-con-tijeras.png" alt="Tijera">
+        </div>
+        <div id="resultado">
+        </div>
+    </div>
+
+    <!-- LLamar a los script -->
+    <script src=Ej10.js></script>

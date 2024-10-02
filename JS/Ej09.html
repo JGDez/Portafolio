@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <link rel="stylesheet" href="Ej09.css">
+    <title>Ejercicio 9 JavaScript 6: DOM</title>
+</head>
+<body>
+    <!--
+        Haz un pequeño juego de palabras que siga estas reglas:
+        ○ Crea un array con 20 frases.
+        ○ Selecciona de forma aleatoria una de las 20 frases y desordena las
+        palabras que la componen.
+        ○ Muestra al usuario las palabras desordenadas, para que luego, cuando
+        pinche en una palabra se muestre debajo, de forma que podría ir
+        montando la frase que cree que es la correcta.
+        ○ Una vez la frase del usuario esté montada, debe pulsar un botón de
+        validación para que compruebe si ha acertado o no.
+    -->
+
+    <h1>Juego de ordenar frases</h1>
+
+    <p class="espContenido txtCentrado">Escoge las palabras de la parte superior para ir formando la frase. Pulsa en las palabra de la parte inferior para devolverlas a la lista desordenada.</p>
+
+    <div id="contenedorJuego">
+        <div id="fraseDesordenada">
+        </div>
+        <div id="fraseJugador">
+        </div>
+        <div id="resultado">
+        </div>
+    </div>
+
+    <div>
+        <button id="botonJugar">Jugar otra</button>
+        <button id="botonComp">Comprobar</button>
+
+    </div>
+
+    <!-- LLamar a los script -->
+    <script src=Ej09.js></script>

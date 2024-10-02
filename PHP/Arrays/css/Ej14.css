@@ -1,0 +1,161 @@
+body {
+    margin: 0%;
+}
+
+.margen {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.centrarTxt {
+    text-align: center;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    
+    width: 100%;
+}
+
+.col1 {
+    border-right: 1px solid #ccc;
+}
+
+.tamMedio    {
+    font-size: 14pt;
+}
+
+/*Centrar todos los elementos del formulario*/
+form > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.3em;
+}
+
+/*Cambiar fondo a la lista deplegable*/
+input[type="submit"]{
+    padding: 5px 20px;
+    border: none;
+    background-color: cadetblue;
+    font-size: 1.3em;
+}
+
+input[type="submit"]:hover{ 
+    border: none;
+    background-color: rgb(48, 87, 88);
+    font-size: 1.3em;
+}
+
+/* Estilo para texto formateado*/
+.destacaTxt {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Formato para el contendor con la lista de números*/
+.listaNums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Formato para el contendor de cada número*/
+.contNum {
+    padding: 0.2em 0.5em;
+    margin-right: 1em;
+    border-bottom: 3px solid rgb(48, 87, 88);
+    margin-bottom: 1em;
+}
+
+/*Formato para adaptar y centrar contenedor en general*/
+.cenAdap {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Formatos para la tabla */
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+
+/*Formato para centrar listas con el resto del contenido*/
+ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+ul, li {
+    width: fit-content;
+}
+
+/*Formato para el tablero de ajedrez*/
+/* Formato incial */
+.tablero {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2em repeat(8, 4em) 2em;
+    justify-content: center;
+    row-gap: 0.5em;
+}
+
+.fTablero {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2em repeat(8, 4em) 2em;
+    justify-content: center;
+    column-gap: 0.5em;
+}
+
+.tituloCol{
+    line-height: 2em; /*Truco para centrar verticalmente las letras y números*/
+    text-align: center;
+}
+
+.tituloFil {
+    line-height: 4em; /*Truco para centrar verticalmente las letras y números*/
+    text-align: center;
+}
+
+.casSelec {
+    border: 0.3em solid cadetblue  !important;
+}
+
+/* Juego de colores alternando claro oscuro típico de los tableros */
+.f0 > .casilla:nth-child(odd) {
+    background-color: oldlace;
+    padding: 0.5em;
+}
+.f0 > .casilla:nth-child(even) {
+    background-color: #9f512d;
+    padding: 0.5em;
+}
+.f1 > .casilla:nth-child(odd) {
+    background-color: sienna;
+}
+.f1 > .casilla:nth-child(even) {
+    background-color: oldlace;
+}
+
+/*
+.casilla:nth-child(2n+9)
+ {
+    background-color: oldlace;
+}
+*/
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,92 @@
+body {
+    margin: 0%;
+}
+
+.margen {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.centrarTxt {
+    text-align: center;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    width: 100%;
+}
+
+.col1 {
+    border-right: 1px solid #ccc;
+}
+
+.tamMedio    {
+    font-size: 14pt;
+}
+
+/*Centrar todos los elementos del formulario*/
+form > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.3em;
+}
+
+/*Cambiar fondo a la lista deplegable*/
+input[type="submit"]{
+    padding: 5px 20px;
+    border: none;
+    background-color: cadetblue;
+    font-size: 1.3em;
+}
+
+input[type="submit"]:hover{ 
+    border: none;
+    background-color: rgb(48, 87, 88);
+    font-size: 1.3em;
+}
+
+/*Formato para el contendor con la lista de números*/
+.listaNums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Formato para el contendor de cada número*/
+.contNum {
+    padding: 0.2em 0.5em;
+    margin-right: 1em;
+    border-bottom: 3px solid rgb(48, 87, 88);
+    margin-bottom: 1em;
+}
+
+/*Formatos para la tabla */
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+td {
+    text-align: left;
+}
+
+/*Formato para centrar listas con el resto del contenido*/
+ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+ul, li {
+    width: fit-content;
+}

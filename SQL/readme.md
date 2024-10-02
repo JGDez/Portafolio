@@ -4,6 +4,8 @@ Carpeta con mis soluciones a algunos de los ejercicios realizados en los cursos,
 
 ## Ejercicios sobre base de datos `jardineria`
 
+Ejercicios realizados durante el curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024).
+
 Los enunciados y mis soluciones están en el archivo [BD_Jardineria.sqlbook](BD_Jardineria.sqlbook) que puede ser abierto con VSCode para su correcta visualización. También están en formato `SQL` plano en el archivo [BBD_Jardineria.sql](BD_Jardineria.sql).
 
 El formato `sqlbook` permite combinar código markdown con SQL y así poder poner los enunciados y secciones junto con su código correspondiente.

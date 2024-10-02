@@ -1,0 +1,77 @@
+/* Centrar todo el contenido */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+#contenedorJuego {
+    display: flex;
+    width: 80%;
+}
+
+.contenedor {
+    /*Situar los elementos*/
+    display: grid;
+    /*flex-direction: row;*/
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    width: 100%;
+}
+
+.recImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 0.2em;
+    background-color: bisque;
+}
+
+.recImagen > img {
+    max-width: 120px;
+    max-height: 120px;
+    
+}
+
+.oculto{
+    visibility: hidden;
+}
+
+#juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+#contador {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.recInfo {
+    padding: 0.2em 0.8em;
+    background-color: darkseagreen;
+    font-size: 2em;
+    width: fit-content;
+    min-width: 3em;
+}
+
+#botonJuego {
+    padding: 0.2em 0.8em;
+    background-color: darkseagreen;
+    text-align: center;
+    width: fit-content;
+    min-width: 3em;
+    border-radius: 100px;
+}
+
+#botonJuego:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}

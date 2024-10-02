@@ -1,0 +1,51 @@
+body {
+    margin: 1%;
+}
+
+/*Textos*/
+h1, h2 {
+    text-align: center;
+}
+
+/*Imagenes y botones*/
+#prod > img {
+    width: 200px;
+    margin-right: 2em;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 0.2em 0.8em;
+
+}
+
+/*Tamaños, bordes, colores, etc*/
+#productos {
+    width: 65vw;
+    margin-right: 2em;
+}
+
+.precio {
+    font-size: 2em;
+}
+
+.snp {
+    margin-bottom: 0px;
+}
+
+#carro {
+    width: 35vw;
+}
+.bordeSup {
+    border-top: 1px solid;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+
+/*Organizar secciones*/
+.sec2Col{
+    display: flex;
+    flex-direction: row;
+}
+
