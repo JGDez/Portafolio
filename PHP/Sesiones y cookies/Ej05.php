@@ -120,7 +120,7 @@
     <div id="tienda" class="sec2Col">
         <div id="productos">
             <h2>Productos</h2>
-            <form action="#" method="post" name="frmComp">
+            <form action="#" method="post" name="frmComp" class="bordeSup">
                 <?php foreach ($libros as $isbn => $datosLib): ?>
                     <div id="prod" class="sec2Col bordeSup">
                         <img src="<?= $rutaImgs.$datosLib['imgUrl'] ?>" alt="<?= $datosLib['titulo'] ?>">
@@ -162,14 +162,14 @@
                             <!-- Fin del producto del carro -->
 
                         <?php endforeach; ?>
+                        <div class="bordeSup">
+                            <form action="#" method="post">
+                                <button type="submit" name="eliminarSesion">Realizar pedido</button>
+                            </form>
+                        </div>
                     </form>
                 <?php endif; ?>
-            </div>
-            <!-- Botón que simula el procesar el pedido eliminando la sesión -->
-            <div class="bordeSup">
-                <form action="#" method="post">
-                    <button type="submit" name="eliminarSesion">Realizar pedido</button>
-                </form>
+                <!-- Botón que simula el procesar el pedido eliminando la sesión -->
             </div>
         </div>
     </div>

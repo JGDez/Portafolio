@@ -41,7 +41,9 @@ button {
     padding-top: 1em;
     margin-top: 1em;
 }
-
+.bordeSup:first-child {
+    border-top: none;
+}
 
 /*Organizar secciones*/
 .sec2Col{
