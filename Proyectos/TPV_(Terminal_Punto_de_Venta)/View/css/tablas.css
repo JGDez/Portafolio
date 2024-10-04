@@ -1,0 +1,127 @@
+#btnAnterior, #btnSiguiente {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.secTabla table {
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 3px, solid, black;
+}
+
+.secTabla td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.secTabla tr:nth-of-type(even){
+    background-color: #f2f2f2;
+}
+
+.secTabla tr:hover {
+    background-color: #ddd;
+}
+
+.secTabla th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f6cc90;
+    text-align: center;
+}
+
+.secTabla td > input {
+    width: 100%;
+}
+
+.secTabla input[type="text"]{
+    border: none;
+}
+
+.secTabla .truncado {
+    max-width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Estilo para los botones*/
+.secTabla .btn {
+    padding: 0.4em 1.5em;
+    border: none;
+    border-radius: 0.4em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#btnSiguiente{
+    background-color:  lightsteelblue
+}
+#btnAnterior{
+    background-color:  lightsteelblue
+}
+
+/*Estilos para los elementos del paginador*/
+#btnAnterior, #btnSiguiente {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* -- Estilos para tabla de caja TPV -- */
+#secCaja table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+}
+#secCaja #divTabla {
+    height: 100%;
+    border-bottom: 2px solid #55575a;
+}
+
+#secCaja td, th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+#secCaja tr:nth-of-type(even){
+    background-color: #f2f2f2;
+}
+
+#secCaja tr:hover {
+    background-color: #ddd;
+}
+
+#secCaja th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #f6cc90;
+    text-align: center;
+}
+
+#secCaja td > input {
+    width: 100%;
+}
+
+#secCaja input[type="text"]{
+    border: none;
+}
+
+#secCaja .truncado {
+    max-width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#secCaja .selec {
+    background-color:  #5d6d7e !important; /*important para que no coja otros atributos de color*/
+    color: white !important;
+}
+
+/* -- Estilos para tabla de caja TPV -- */

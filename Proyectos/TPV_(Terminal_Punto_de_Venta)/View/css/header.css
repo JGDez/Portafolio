@@ -1,0 +1,104 @@
+/*Encabezado*/
+header > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 0.9rem;
+
+}
+
+.secMenu {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color:#F0AE4D;
+}
+
+.cent-Cont-Vert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Sección logo*/
+.secMenu .imgLogo {
+    height: 2em;
+    margin-left: 0.5em;
+}
+/*Fin Sección Logo*/
+
+/*Menú*/
+ /* --Posicionamiento de las 2 partes del menú -- */
+nav {
+    display: flex ;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul:first-child {
+    padding: 0%;
+    width: 85%;
+}
+nav ul:last-child {
+    padding: 0%;
+    width: 15%;
+}
+nav ul:last-child li {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+ /* --Fin posicionamiento de las 2 partes del menú -- */
+
+ /* --Estilo para los elementos del menú--*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    overflow: hidden; /*Para lo que sobrepase el contenido no se vea*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    padding: 0.5em 1em;
+}
+
+nav ul li:hover {
+    background: #eca023;
+}
+
+nav ul {
+    color: #fff;
+}
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.espacioMenu{
+    height: 3em;
+}
+
+.submenu-contenido {
+    display: none;
+    position: absolute;
+    padding: 0%;
+    /*Determinar alto del menú con los enlaces o <li> del txt del menú
+     https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
+    */
+    background-color: #f9f9f9;
+    min-width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu:hover .submenu-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: #F0AE4D;
+  }
+/*Fin Menú*/
