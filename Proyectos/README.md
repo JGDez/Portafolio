@@ -26,17 +26,10 @@ El usuario y contraseña para la base creada se indica en el archivo ubicado den
 
 ### Pantallazos de la aplicación WEB
 
-<div style="width: 100%; display: flex; flex-wrap: wrap; flex-direction: row">
-    <div style="max-width: 49%; padding: 0.5%">
-    <img src="./Imagenes/TPV-Muestra_Caja.png" alt="Pantalla Caja del TPV" style="width:100%">
-    </div>
-    <div style="max-width: 49%; padding: 0.5%">
-    <img src="./Imagenes/TPV-Muestra_Lista_Productos.png" alt="Pantalla Lista de productos del TPV" style="width:100%">
-    </div>
-    <div style="max-width: 49%; padding: 0.5%">
-    <img src="./Imagenes/TPV-Muestra_Editar_Producto.png" alt="Pantalla para editar un producto del TPV" style="width:100%">
-    </div>
-</div>
+|  |  |
+| --- | --- |
+| ![Pantalla Caja del TPV](./Imagenes/TPV-Muestra_Caja.png) | ![Pantalla Lista de productos del TPV](./Imagenes/TPV-Muestra_Lista_Productos.png) |
+| ![Pantalla para editar un producto del TPV](./Imagenes/TPV-Muestra_Editar_Producto.png) |  |
 
 ### Instalación de la aplicación WEB
 
