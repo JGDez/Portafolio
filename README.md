@@ -10,7 +10,7 @@ Gracias por tu visita.
 
 ## ¿Qué podrás encontrar?
 
-- **[Proyectos](Proyectos)**: Proyectos que he realizado en los cursos y fuera de ellos con el interés de ir aumentando mis conocimientos en programación.
-- **[SQL](SQL)**: Carpeta con mis soluciones a algunos de los ejercicios realizados en los cursos, además de notas de sentencias SQL que he creado para mis necesidades en este lenguaje.
-- **[PHP](PHP)**: Carpeta con mis soluciones a algunos de los ejercicios de PHP realizados en los cursos, además de código de cómo he resuelto algunas necesidades en este lenguaje.
-- **[JavaScript](JS)**: Carpeta con mis soluciones a algunos de los ejercicios de JavaScript realizados en los cursos, además de código de cómo he resuelto algunas necesidades en este lenguaje.
+- **[Proyectos](./Proyectos)**: Proyectos que he realizado en los cursos y fuera de ellos con el interés de ir aumentando mis conocimientos en programación.
+- **[SQL](./SQL)**: Carpeta con mis soluciones a algunos de los ejercicios realizados en los cursos, además de notas de sentencias SQL que he creado para mis necesidades en este lenguaje.
+- **[PHP](./PHP)**: Carpeta con mis soluciones a algunos de los ejercicios de PHP realizados en los cursos, además de código de cómo he resuelto algunas necesidades en este lenguaje.
+- **[JavaScript](./JS)**: Carpeta con mis soluciones a algunos de los ejercicios de JavaScript realizados en los cursos, además de código de cómo he resuelto algunas necesidades en este lenguaje.
