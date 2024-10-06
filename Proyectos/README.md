@@ -26,7 +26,8 @@ El usuario y contraseña para acceder a la base creada se indica en el archivo u
 
 ### Pantallazos de la aplicación WEB
 
-[comment]: # (Estructura de imágenes hecha con tablas porque en GitHub no respetaba la realizada con código HTML)
+[comment]:# (Estructura de imágenes hecha con tablas porque en GitHub no respetaba la realizada con código HTML)
+
 |  |  |
 | --- | --- |
 | ![Pantalla Caja del TPV](./Imagenes/TPV-Muestra_Caja.png) | ![Pantalla Lista de productos del TPV](./Imagenes/TPV-Muestra_Lista_Productos.png) |
