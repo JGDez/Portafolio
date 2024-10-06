@@ -35,18 +35,18 @@ class Tienda {
      */
     function __construct($id, $cif_nif, $nombre_Fis, $nombre_Com, $direccion, $poblacion, $cp, $provincia, $logoTienda, $logoTicket, $telef, $movil, $email) {
         $this->id = $id;
-        $this->cif_nif = $cif_nif;
-        $this->nombre_Fis = $nombre_Fis;
-        $this->nombre_Com = $nombre_Com;
-        $this->direccion = $direccion;
-        $this->poblacion = $poblacion;
-        $this->cp = $cp;
-        $this->provincia = $provincia;
+        $this->cif_nif = mb_substr($cif_nif,0,9, "UTF-8");
+        $this->nombre_Fis = mb_substr($nombre_Fis,0,50, "UTF-8");
+        $this->nombre_Com = mb_substr($nombre_Com,0,50, "UTF-8");
+        $this->direccion = mb_substr($direccion,0,100, "UTF-8");
+        $this->poblacion = mb_substr($poblacion,0,50, "UTF-8");
+        $this->cp = mb_substr($cp,0,5, "UTF-8");
+        $this->provincia = mb_substr($provincia,0,50, "UTF-8");
         $this->logoTienda = $logoTienda;
         $this->logoTicket = $logoTicket;
-        $this->telef = $telef;
-        $this->movil = $movil;
-        $this->email = $email;
+        $this->telef = mb_substr($telef,0,15, "UTF-8");
+        $this->movil = mb_substr($movil,0,15, "UTF-8");
+        $this->email = mb_substr($email,0,100, "UTF-8");
     }
     
     /* --- Getters --- */

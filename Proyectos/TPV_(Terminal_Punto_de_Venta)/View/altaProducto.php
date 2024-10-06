@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPV</title>
+    <link rel="icon" type="image/x-icon" href="<?= $rutaImgs.'favicon.png' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'header.css' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'estilos.css' ?>">
 </head>
@@ -34,11 +35,11 @@
                 <div id="lista_form" class="ancho70xC">
                     <div class="divInput">
                         <label for="nombre">Código</label><br>
-                        <input type="text" name="codigo" id="codigo" placeholder="Código del producto" required>
+                        <input type="text" name="codigo" id="codigo" placeholder="Código del producto" required maxlength="20">
                     </div>
                     <div class="divInput">
                         <label for="nombre">Nombre</label><br>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto" required maxlength="50">
                     </div>
                     <div class="divInput">
                         <label for="descripcion">Descripción del producto</label><br>

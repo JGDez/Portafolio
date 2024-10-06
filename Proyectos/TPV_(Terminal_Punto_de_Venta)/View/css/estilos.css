@@ -58,6 +58,9 @@ body {
 .MxAlto60xC{
     max-height: 60%;
 }
+.MxAlto80xC{
+    max-height: 80%;
+}
 
  /* -- Fin Anchos y altos -- */
 
@@ -281,6 +284,12 @@ margin-left: 0%;
     padding: 0.4rem 2rem;
     cursor: pointer;
     border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%)
+}
+.btn:hover{
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(0 0 0 / 30%), 0 3px 8px 0 #aaa;
 }
 .btnOk {
     background: mediumseagreen;
@@ -303,7 +312,7 @@ margin-left: 0%;
     width: 6rem;
     height: 6rem;
     margin-left: 0.2rem;
-    margin-right: 0.2   rem;
+    margin-right: 0.2rem;
     padding: 0.2rem 0.2rem;
     border: 2px solid #f6cc90;
     background-color: white;

@@ -17,8 +17,8 @@ class Categorias {
      */
     function __construct($id, $nombre, $descripcion, $color){
         $this -> id = $id;
-        $this -> nombre = $nombre;
-        $this -> descripcion = $descripcion;
+        $this -> nombre = mb_substr($nombre,0,50, "UTF-8");
+        $this -> descripcion = mb_substr($descripcion,0,100, "UTF-8");
         $this -> color = $color;
     }
 

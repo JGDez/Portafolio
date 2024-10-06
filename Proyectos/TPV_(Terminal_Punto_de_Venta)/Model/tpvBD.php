@@ -3,8 +3,8 @@
 class TpvBD {
     //Declaración de variables
     private static $urlBD = "localhost";
-    private static $usuarioBD = "TuUsuario";
-    private static $passBD = 'TuContraseña';
+    private static $usuarioBD = "TPVUser";
+    private static $passBD = 'NF(:91IBk&$H)_w@!*1Z';
     private static $nombreBD = "tpv";
     private static $juegoCarac= "utf8";
 

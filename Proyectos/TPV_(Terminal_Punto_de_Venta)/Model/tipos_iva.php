@@ -15,7 +15,7 @@ class Tipos_IVA {
      */
     function __construct($id, $tipo, $valor_IVA){
         $this -> id = $id;
-        $this -> tipo = $tipo;
+        $this -> tipo = mb_substr($tipo,0,20, "UTF-8");
         $this -> valor_IVA = $valor_IVA;
     }
 

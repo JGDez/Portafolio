@@ -15,8 +15,8 @@ class Tipo_Movimiento {
      */
     function __construct($id, $codigo, $nombre){
         $this -> id = $id;
-        $this -> codigo = $codigo;
-        $this -> nombre = $nombre;
+        $this -> codigo = mb_substr($codigo,0,3, "UTF-8");
+        $this -> nombre = mb_substr($nombre,0,20, "UTF-8");
     }
 
     /* Lista de getters */

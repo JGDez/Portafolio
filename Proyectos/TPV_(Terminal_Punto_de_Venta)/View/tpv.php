@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPV</title>
+    <link rel="icon" type="image/x-icon" href="<?= $rutaImgs.'favicon.png' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS . 'estilos.css' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS . 'header.css' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS . 'tablas.css' ?>">
@@ -122,7 +123,7 @@
                 <?php foreach ($productos['Productos'] as $producto) : ?>
                     <form action="../Controller/tpvAcciones.php" method="post">
                         <button name="selProducto" value="<?= $producto->getId() ?>" class="espacioFin btnProd">
-                            <img class="MxAncho70xC" src="<?= $rutaProds . $producto->getImagenProd() ?>" alt="<?= $producto->getNombre() ?>" title="<?= $producto->getNombre() ?>">
+                            <img class="MxAncho70xC MxAlto80xC" src="<?= $rutaProds . $producto->getImagenProd() ?>" alt="<?= $producto->getNombre() ?>" title="<?= $producto->getNombre() ?>">
                             <div class="truncado"><?= $producto->getNombre() ?></div>
                         </button>
                     </form>

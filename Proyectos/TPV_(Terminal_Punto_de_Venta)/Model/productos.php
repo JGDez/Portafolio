@@ -27,8 +27,8 @@ class Productos {
      */
     function __construct($id, $codigo, $nombre, $descripcion, $categoria, $precioBruto, $iva, $precioUlCom, $imagenProd){
         $this -> id = $id;
-        $this -> codigo = $codigo;
-        $this -> nombre = $nombre;
+        $this -> codigo = mb_substr($codigo,0,20, "UTF-8");
+        $this -> nombre = mb_substr($nombre,0,50, "UTF-8");
         $this -> descripcion = mb_substr($descripcion,0,250, "UTF-8");
         $this -> categoria = $categoria;
         $this -> precioBruto = $precioBruto;

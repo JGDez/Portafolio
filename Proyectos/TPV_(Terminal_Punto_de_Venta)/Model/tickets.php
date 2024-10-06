@@ -25,7 +25,7 @@ class Tickets {
         $this -> id = $id;
         $this -> fecha = $fecha;
         $this -> tienda = $tienda;
-        $this -> vendedor = $vendedor;
+        $this -> vendedor = mb_substr($vendedor,0,20, "UTF-8");
         $this -> tipo = $tipo;
         $this -> entregado = $entregado;
         $this -> modoPago = $modoPago;

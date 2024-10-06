@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPV</title>
+    <link rel="icon" type="image/x-icon" href="<?= $rutaImgs.'favicon.png' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'header.css' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'estilos.css' ?>">
 </head>
@@ -44,48 +45,48 @@
                 <div id="lista_form" class="ancho70xC">
                     <div class="divInput ancho40xC">
                         <label for="cif_nif">C.I.F./N.I.F.</label><br>
-                        <input type="text" name="cif_nif" id="cif_nif" placeholder="C.I.F. o N.I.F." required>
+                        <input type="text" name="cif_nif" id="cif_nif" placeholder="C.I.F. o N.I.F." required maxlength="9">
                     </div>
                     <div class="divInput">
                         <label for="nombre_Fis">Nombre Fiscal</label><br>
-                        <input type="text" name="nombre_Fis" id="nombre_Fis" placeholder="Nombre Fiscal de la empresa" required>
+                        <input type="text" name="nombre_Fis" id="nombre_Fis" placeholder="Nombre Fiscal de la empresa" required maxlength="50">
                     </div>
                     <div class="divInput">
                         <label for="nombre_Com">Nombre Comercial</label><br>
-                        <input type="text" name="nombre_Com" id="nombre_Com" placeholder="Nombre Comercial de la emrpesa" required>
+                        <input type="text" name="nombre_Com" id="nombre_Com" placeholder="Nombre Comercial de la emrpesa" required maxlength="50">
                     </div>
                     <div class="flexRow">
                         <div class="ancho60xC divInput">
                             <label for="direccion">Dirección</label><br>
-                            <input type="text" name="direccion" id="direccion" placeholder="Dirección postal" required>
+                            <input type="text" name="direccion" id="direccion" placeholder="Dirección postal" required maxlength="100">
                         </div>
                         <div class="ancho40xC divInput">
                             <label for="poblacion">Población</label><br>
-                            <input type="text" name="poblacion" id="poblacion" placeholder="Población" required>
+                            <input type="text" name="poblacion" id="poblacion" placeholder="Población" required maxlength="50">
                         </div>
                     </div>
                     <div class="flexRow">
                         <div class="ancho40xC divInput">
                             <label for="cp">Código Postal</label><br>
-                            <input type="text" name="cp" id="cp" placeholder="Código postal" required>
+                            <input type="text" name="cp" id="cp" placeholder="Código postal" required maxlength="5">
                         </div>
                         <div class="ancho40xC divInput">
                             <label for="provincia">Provincia</label><br>
-                            <input type="text" name="provincia" id="provincia" placeholder="Provincia" required>
+                            <input type="text" name="provincia" id="provincia" placeholder="Provincia" required maxlength="50">
                         </div>
                     </div>
                     <div class="divInput">
                         <label for="email">Correo electrónico</label><br>
-                        <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico">
+                        <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico" maxlength="100">
                     </div>
                     <div class="flexRow">
                         <div class="ancho40xC divInput">
                             <label for="telef">Teléfono</label><br>
-                            <input type="tel" name="telef" id="telef" placeholder="Número de teléfono">
+                            <input type="tel" name="telef" id="telef" placeholder="Número de teléfono" maxlength="15">
                         </div>
                         <div class="ancho40xC divInput">
                             <label for="movil">Móvil</label><br>
-                            <input type="tel" name="movil" id="movil" placeholder="Número de móvil">
+                            <input type="tel" name="movil" id="movil" placeholder="Número de móvil" maxlength="15">
                         </div>
                     </div>
                     

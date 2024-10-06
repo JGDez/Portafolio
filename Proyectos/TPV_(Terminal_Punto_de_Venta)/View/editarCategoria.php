@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPV</title>
+    <link rel="icon" type="image/x-icon" href="<?= $rutaImgs.'favicon.png' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'header.css' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'estilos.css' ?>">
 </head>
@@ -23,11 +24,11 @@
                 <div class="divInput">
                     <input type="hidden" name="id" id="id" value="<?= $categoria->getId() ?>">
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" name="nombre" id="nombre" value="<?= $categoria->getNombre() ?>" placeholder="Nombre de la categoría" required>
+                    <input type="text" name="nombre" id="nombre" value="<?= $categoria->getNombre() ?>" placeholder="Nombre de la categoría" required maxlength="50">
                 </div>
                 <div class="divInput">
                     <label for="descripcion">Descripción para la categoría</label><br>
-                    <textarea type="text" name="descripcion" id="descripcion" maxlength="300" placeholder="Puedes escribir una descripción (máximo 300 caracteres)"><?= $categoria->getDescripcion() ?></textarea>
+                    <textarea type="text" name="descripcion" id="descripcion" maxlength="100" placeholder="Puedes escribir una descripción (máximo 100 caracteres)"><?= $categoria->getDescripcion() ?></textarea>
                 </div>
                 <div class="divInput ancho30xC">
                     <label for="color">Color</label><br>

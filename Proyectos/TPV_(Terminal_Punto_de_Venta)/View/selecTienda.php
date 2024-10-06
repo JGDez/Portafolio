@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPV</title>
+    <link rel="icon" type="image/x-icon" href="<?= $rutaImgs.'favicon.png' ?>">
     <!-- link rel="stylesheet" href="../View/css/header.css" -->
     <link rel="stylesheet" href="<?= RUTA_CSS.'header.css' ?>">
     <link rel="stylesheet" href="<?= RUTA_CSS.'estilos.css' ?>">
