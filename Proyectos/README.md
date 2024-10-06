@@ -16,16 +16,17 @@ Se ha realizado utilizando:
 
 ### Esquema de base de datos
 
-Se plantea una base de datos con una estructura para poder seguir ampliando el proyecto. El esquema entidad relación final es el siguiente:
+Se plantea una base de datos con una estructura que permita seguir ampliando el proyecto. El esquema entidad relación final es el siguiente:
 
 ![Diagrama Entidad Relación de la BD del TPV](./Imagenes/Diagrama_BD_TPV.png)
 
 Para montar la base de datos necesaria se puede usar el archivo [tpv.sql](./tpv.sql) de este mismo directorio.
 
-El usuario y contraseña para la base creada se indica en el archivo ubicado dentro del proyecto en [TPV_(Terminal_Punto_de_Venta)/Model/tpvBD.php](TPV_(Terminal_Punto_de_Venta)/Model/tpvBD.php), asignando al principio del archivo los valores a las variables `$usuarioBD` y `$passBD`.
+El usuario y contraseña para acceder a la base creada se indica en el archivo ubicado dentro del proyecto en [TPV_(Terminal_Punto_de_Venta)/Model/tpvBD.php](TPV_(Terminal_Punto_de_Venta)/Model/tpvBD.php), asignando al principio del archivo los valores a las variables `$usuarioBD` y `$passBD`.
 
 ### Pantallazos de la aplicación WEB
 
+[comment]: # (Estructura de imágenes hecha con tablas porque en GitHub no respetaba la realizada con código HTML)
 |  |  |
 | --- | --- |
 | ![Pantalla Caja del TPV](./Imagenes/TPV-Muestra_Caja.png) | ![Pantalla Lista de productos del TPV](./Imagenes/TPV-Muestra_Lista_Productos.png) |
@@ -38,6 +39,6 @@ Para probar la aplicación WEB del TPV se necesita tener en local:
 - Un servicio LAMP, XAMP o WAMP.
 - Un servidor MySQL.
 - Situar el contenido del directorio `TPV_(Terminal_Punto_de_Venta)` en el directorio del localhost.
-- Crear la base de datos `tpv` y sus tablas correspondientes. Esto se puede hacer con el archivo [tpv.sql](./tpv.sql) el cual también creará algunos datos.
+- Crear la base de datos `tpv` y sus tablas correspondientes. Esto se puede hacer con el archivo [tpv.sql](./tpv.sql) el cual también introducirá algunos datos.
 - Indicar en el archivo del proyecto `Model/tpvBD.php` el usuario y contraseña que tendrá acceso a la BD `tpv` generada en el paso anterior.
 - Accediendo al `localhost` se debería cargar la pantalla de inicio.
