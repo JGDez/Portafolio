@@ -4,7 +4,7 @@ Estos son proyectos que he realizado en los cursos y fuera de ellos con el inter
 
 ## TPV (Terminal Punto de Venta)
 
-Proyecto que me tocó realizar para fin del curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024). No se especificaba nada más que hacer un TPV, el resto era a libre elección. No he usado ningún framework ni CMS. Se pedía realizar las funciones que se consiguieran dentro del plazo de entrega.
+Proyecto a realizar para fin del curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024). No se especifica ningún requerimiento y son a libre elección. No he usado ningún framework ni CMS para desarrollar todo el código. Se pedía realizar las funciones que se consiguieran dentro del plazo de entrega.
 
 Se ha realizado utilizando:
 - Sistema LAMP con Linux, Apache, MySQL y PHP.
