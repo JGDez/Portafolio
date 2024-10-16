@@ -1,8 +1,8 @@
 # PHP
 
-## Ejercicios PHP durante IFCD0210
+## Retos PHP durante IFCD0210
 
-Contiene algunos de los ejercicios realizados durante el curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024).
+Contiene algunos de los retos realizados durante el curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024).
 
 Se muestran mis soluciones a los problemas planteados. Se puede abrir desde un servidor Apache.
 
@@ -12,12 +12,12 @@ Se han realizado utilizando:
 - HTML5
 - CSS3
 
-### Lista de ejercicios
+### Lista de retos
 
 **Arrays**:
 
 - **Ej10**: Realiza un programa que escoja al azar 10 cartas de la baraja española y que diga cuántos puntos suman según el juego de la brisca. Emplea un array asociativo para obtener los puntos a partir del nombre de la figura de la carta. Asegúrate de que no se repite ninguna carta, igual que si las hubieras cogido de una baraja de verdad.
-    >NP: He creado el ejercicio partiendo de los números o figuras de la baraja en un array y los palos en otro. De esta manera se pueden cambiar y crea una baraja de otro tipo.
+    >NP: He creado la solución partiendo de los números o figuras de la baraja en un array y los palos en otro. De esta manera se pueden cambiar facilitando la creación una baraja de otro tipo.
 - **Ej14**: Escribe un programa que, dada una posición en un tablero de ajedrez, nos diga a qué casillas podría saltar un alfil que se encuentra en esa posición. Indícalo de forma gráfica sobre el tablero con un color diferente para estas casillas donde puede saltar la figura. El alfil se mueve siempre en diagonal. El tablero cuenta con 64 casillas. Las columnas se indican con las letras de la “a” a la “h” y las filas se indican del 1 al 8.
 - *Captura de mi resultado*:
 ![Pantalla ejercicio 14](./Imagenes/Ej14-Muestra.png)

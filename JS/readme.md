@@ -1,8 +1,8 @@
 # JavaScript
 
-## Ejercicios JavaScript durante IFCD0210
+## Retos JavaScript durante IFCD0210
 
-Contiene algunos de los ejercicios realizados durante el curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024).
+Contiene algunos de los retos realizados durante el curso **IFCD0210 - Desarrollo de Aplicaciones Con Tecnologías WEB** (2023-2024).
 
 Se muestran mis soluciones a los problemas planteados. Se puede abrir el fichero `html` en cualquier navegador siempre que se tengan los archivos `.html`, `.js` y `.css` en el mismo directorio.
 
@@ -12,7 +12,7 @@ Se han realizado utilizando:
 - HTML5
 - CSS3
 
-### Lista de ejercicios
+### Lista de retos
 
 - **Ej09**: Haz un pequeño juego de palabras que siga estas reglas:
     - Crea un array con 20 frases.
